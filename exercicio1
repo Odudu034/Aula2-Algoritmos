@@ -1,0 +1,33 @@
+//Eduardo Escobar Paulucci
+
+public class Main {
+    public static void main(String[] args) {
+
+        System.out.println("Eduardo Escobar Paulucci");
+        System.out.println("RA: 1142687627");
+        System.out.println("Curso ADS (Analise e desenvolvimento de sistemas) ");
+
+            System.out.println("tenho 18 anos!");
+            System.out.println("tenho 1.90m de aultura ");
+            System.out.println("Estou presente!");
+
+        int idade=25;
+        System.out.printf("eu tenho %d anos. \n",idade);
+
+        double nota=8.57;
+        System.out.printf("A nota foi %.2f\n",nota);
+
+        String nome = "Ana";
+        int idade1 = 20;
+        System.out.printf("Nome %-10s idade: %d\n",nome,idade1);
+
+
+        int num=5;
+        for (int i= 1; i<= 10; i++)
+        {
+            System.out.printf("%d x %d = %d\n", num, i, num * i);
+
+
+        }
+    }
+}
