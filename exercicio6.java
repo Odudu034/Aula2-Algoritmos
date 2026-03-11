@@ -1,18 +1,24 @@
-
+import  java.util.Scanner;
 
 public class exercicio6 {
-    public static void main(String[] arg){
+    public static void main(String[] args) {
 
-        int calcu1= ((20-15)/2);
-        double calcu2= 2 ^ ((5 / 20) + (30 / (15 ^ 2)));
-        double calcu3= 35/(6+2);
-        double calcu4= 24%4;
+        Scanner e = new Scanner(System.in);
 
-        System.out.println("Esse e o resultado do primeiro calculo: "+calcu1);
-        System.out.println("esse e o resultado do segundo calculo: "+calcu2);
-        System.out.println("Esse e o resultado do terceiro calculo: "+calcu3);
-        System.out.println("Esse e o resultado do quarto calculo: "+calcu4);
+        System.out.println("fale qual o seu genero");
+        String genero=e.nextLine();
 
+        System.out.println("fale a sua altura em centimetros");
+        int altura=e.nextInt();
+
+
+
+        if (genero == "mulher" ){
+            double pesoideal = 62+0.70 * (altura-153);
+                    System.out.println("O peso ideal é " +pesoideal );
+
+
+        }
 
     }
 }

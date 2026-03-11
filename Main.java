@@ -1,3 +1,5 @@
+//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 import java.util.Scanner;
 
 public class Main {
@@ -5,15 +7,31 @@ public class Main {
 
         Scanner e=new Scanner(System.in);
 
-        System.out.println("Didite dois numeros!");
+        System.out.println("fale um numeroa aleatoria se for maior que 20 ira ser dividido por 2" );
+        double num=e.nextDouble();
 
-        double num1=e.nextDouble();
-        double num2=e.nextDouble();
-        double soma=e.nextDouble();
+        if (num >= 20 ){
+            double metade = num / 2;
 
-        System.out.println("esses sao os numeros que vc escolheu:"+num1+" e "+num2);
+            System.out.println("esse e o seu numero dividido pela metade "+metade);
 
-        System.out.println("essas sao as somas desses numeros: "+soma);
+
+        } else{
+            System.out.printf("Seu numero e menos que 20!\n%.0f esse e o seu numero\n",num);
+
+        }
+
+        System.out.println("digite a sua idade");
+        int idade= e.nextInt();
+
+        if (idade >= 18 ){
+            System.out.println("maior de idade!");
+
+        }else{
+            System.out.println("menor de idade");
+
+        }
+
 
 
     }
